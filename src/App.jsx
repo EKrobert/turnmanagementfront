@@ -18,6 +18,7 @@ import History from './pages/agent/History'
 import Join from './pages/client/Join'
 import TicketTracking from './pages/client/TicketTracking'
 import Display from './pages/Display'
+import RegisterOrganization from './pages/RegisterOrganization'
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
       <AuthProvider>
         <Routes>
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<RegisterOrganization />} />
           <Route path="/join/:qrToken" element={<Join />} />
           <Route path="/ticket/:id" element={<TicketTracking />} />
           <Route path="/display/:qrToken" element={<Display />} />
